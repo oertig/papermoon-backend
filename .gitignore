@@ -1,4 +1,4 @@
 config/config.inc.php
 images/*
 import/raw_data/*.json
-import/raw_data/*.csv
+import/raw_data/gdocs_csv_community/*.csv
