@@ -9,7 +9,7 @@ require_once __DIR__ . '/../config/config.inc.php';
 require_once __DIR__ . '/../modules/dbconn.module.php';
 
 /* using atlasacademy's basic json to populate a stock database */
-$jsonData = file_get_contents('basic_servant.json');
+$jsonData = file_get_contents('servants_by_atlas_academy.json');
 $json = json_decode($jsonData, true);
 
 $classes = [];
