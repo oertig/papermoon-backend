@@ -1,3 +1,4 @@
 config/config.inc.php
 images/*
-import/basic_servant.json
+import/raw_data/*.json
+import/raw_data/*.csv
