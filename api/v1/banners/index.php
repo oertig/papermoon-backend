@@ -35,7 +35,7 @@ $bannerServantIDs = [];
 
 if($bannerServants) { $bannerServantIDs = explode(',', $bannerServants); }
 
-$bannerQuery = "SELECT * FROM `banner`"; // default to fetch all banners
+$bannerQuery = "SELECT * FROM `banner` ORDER BY `start_date` ASC, `end_date` ASC"; // default to fetch all banners
 
 // TODO: implement better permutation-checking
 // if($bannerID === '*') {
@@ -51,6 +51,7 @@ $bannerQuery = "SELECT * FROM `banner`"; // default to fetch all banners
 // } else {
 //     // get specific banners
 // }
+
 $status = 'success';
 
 try {
