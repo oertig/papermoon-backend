@@ -11,7 +11,7 @@ $uri = $_SERVER['REQUEST_URI']; // to get the full path with query parameters af
 $components = parse_url($uri);
 $path = $components['path']; // /api/v1/banners
 $requestedResource = ltrim($path, '/api/v1/');
-$query = $components['query']; 
+$query = $components['query'] ?? '';
 parse_str($query, $queryParams);
 
 /*
