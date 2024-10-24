@@ -40,7 +40,8 @@ switch($requestedResource) {
         break;
     default:
             // not supported resource
-            // TODO: return error message
+            header('HTTP/1.1 404 Not Found');
+            echo 'Resource not found.';
         break;
 }
 
