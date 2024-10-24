@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'GET') {
 $uri = $_SERVER['REQUEST_URI']; // to get the full path with query parameters after redirect from .htacess
 $components = parse_url($uri);
 $path = $components['path']; // /api/v1/banners
-$requestedResource = ltrim($path, '/api/v1/');
+$requestedResource = str_replace('/papermoon-backend/api/v1/', '', $path);
 $query = $components['query'] ?? '';
 parse_str($query, $queryParams);
 
